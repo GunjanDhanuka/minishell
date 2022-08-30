@@ -1,0 +1,168 @@
+\begin{theindex}
+
+  \item {blue}
+    \subitem {shell.cpp}, \hyperpage{6}
+  \item {builtin\_str}
+    \subitem {shell.cpp}, \hyperpage{26}
+
+  \indexspace
+
+  \item {cyan}
+    \subitem {shell.cpp}, \hyperpage{6}
+
+  \indexspace
+
+  \item {err}
+    \subitem {shell.cpp}, \hyperpage{5}
+  \item {execute}
+    \subitem {shell.cpp}, \hyperpage{7}
+
+  \indexspace
+
+  \item {green}
+    \subitem {shell.cpp}, \hyperpage{8}
+
+  \indexspace
+
+  \item {inbuiltHandler}
+    \subitem {shell.cpp}, \hyperpage{8}
+  \item {isRedirection}
+    \subitem {shell.cpp}, \hyperpage{9}
+
+  \indexspace
+
+  \item {launcher}
+    \subitem {shell.cpp}, \hyperpage{10}
+
+  \indexspace
+
+  \item {main}
+    \subitem {shell.cpp}, \hyperpage{10}
+  \item {main\_process}
+    \subitem {shell.cpp}, \hyperpage{11}
+  \item {MAXCOMS}
+    \subitem {shell.cpp}, \hyperpage{5}
+  \item {my\_cd}
+    \subitem {shell.cpp}, \hyperpage{12}
+  \item {my\_echo}
+    \subitem {shell.cpp}, \hyperpage{13}
+  \item {my\_exit}
+    \subitem {shell.cpp}, \hyperpage{13}
+  \item {my\_help}
+    \subitem {shell.cpp}, \hyperpage{14}
+  \item {my\_history}
+    \subitem {shell.cpp}, \hyperpage{15}
+  \item {my\_printenv}
+    \subitem {shell.cpp}, \hyperpage{16}
+  \item {my\_setenv}
+    \subitem {shell.cpp}, \hyperpage{16}
+  \item {my\_unsetenv}
+    \subitem {shell.cpp}, \hyperpage{17}
+
+  \indexspace
+
+  \item {NEWLINE}
+    \subitem {shell.cpp}, \hyperpage{5}
+  \item {number\_of\_builtins}
+    \subitem {shell.cpp}, \hyperpage{17}
+
+  \indexspace
+
+  \item {ONE}
+    \subitem {shell.cpp}, \hyperpage{5}
+
+  \indexspace
+
+  \item {parser}
+    \subitem {shell.cpp}, \hyperpage{18}
+  \item {parserPipe}
+    \subitem {shell.cpp}, \hyperpage{18}
+  \item {pipeLauncher}
+    \subitem {shell.cpp}, \hyperpage{19}
+  \item {printCurrentDir}
+    \subitem {shell.cpp}, \hyperpage{20}
+  \item {processInput}
+    \subitem {shell.cpp}, \hyperpage{21}
+
+  \indexspace
+
+  \item {read\_input}
+    \subitem {shell.cpp}, \hyperpage{22}
+  \item {READ\_LINE\_BUFFER\_SIZE}
+    \subitem {shell.cpp}, \hyperpage{5}
+  \item {red}
+    \subitem {shell.cpp}, \hyperpage{23}
+  \item {redirection}
+    \subitem {shell.cpp}, \hyperpage{23}
+  \item {reset}
+    \subitem {shell.cpp}, \hyperpage{24}
+  \item {rundest}
+    \subitem {shell.cpp}, \hyperpage{24}
+  \item {runsource}
+    \subitem {shell.cpp}, \hyperpage{25}
+
+  \indexspace
+
+  \item {shell.cpp}
+    \subitem {blue}, \hyperpage{6}
+    \subitem {builtin\_str}, \hyperpage{26}
+    \subitem {cyan}, \hyperpage{6}
+    \subitem {err}, \hyperpage{5}
+    \subitem {execute}, \hyperpage{7}
+    \subitem {green}, \hyperpage{8}
+    \subitem {inbuiltHandler}, \hyperpage{8}
+    \subitem {isRedirection}, \hyperpage{9}
+    \subitem {launcher}, \hyperpage{10}
+    \subitem {main}, \hyperpage{10}
+    \subitem {main\_process}, \hyperpage{11}
+    \subitem {MAXCOMS}, \hyperpage{5}
+    \subitem {my\_cd}, \hyperpage{12}
+    \subitem {my\_echo}, \hyperpage{13}
+    \subitem {my\_exit}, \hyperpage{13}
+    \subitem {my\_help}, \hyperpage{14}
+    \subitem {my\_history}, \hyperpage{15}
+    \subitem {my\_printenv}, \hyperpage{16}
+    \subitem {my\_setenv}, \hyperpage{16}
+    \subitem {my\_unsetenv}, \hyperpage{17}
+    \subitem {NEWLINE}, \hyperpage{5}
+    \subitem {number\_of\_builtins}, \hyperpage{17}
+    \subitem {ONE}, \hyperpage{5}
+    \subitem {parser}, \hyperpage{18}
+    \subitem {parserPipe}, \hyperpage{18}
+    \subitem {pipeLauncher}, \hyperpage{19}
+    \subitem {printCurrentDir}, \hyperpage{20}
+    \subitem {processInput}, \hyperpage{21}
+    \subitem {read\_input}, \hyperpage{22}
+    \subitem {READ\_LINE\_BUFFER\_SIZE}, \hyperpage{5}
+    \subitem {red}, \hyperpage{23}
+    \subitem {redirection}, \hyperpage{23}
+    \subitem {reset}, \hyperpage{24}
+    \subitem {rundest}, \hyperpage{24}
+    \subitem {runsource}, \hyperpage{25}
+    \subitem {split\_input}, \hyperpage{25}
+    \subitem {TOK\_BUFFER\_SIZE}, \hyperpage{5}
+    \subitem {TOK\_DELIM}, \hyperpage{6}
+    \subitem {yellow}, \hyperpage{26}
+    \subitem {ZERO}, \hyperpage{6}
+  \item {split\_input}
+    \subitem {shell.cpp}, \hyperpage{25}
+  \item {src/shell.cpp}, \hyperpage{3}
+
+  \indexspace
+
+  \item {TOK\_BUFFER\_SIZE}
+    \subitem {shell.cpp}, \hyperpage{5}
+  \item {TOK\_DELIM}
+    \subitem {shell.cpp}, \hyperpage{6}
+
+  \indexspace
+
+  \item {yellow}
+    \subitem {shell.cpp}, \hyperpage{26}
+
+  \indexspace
+
+  \item {ZERO}
+    \subitem {shell.cpp}, \hyperpage{6}
+
+\end{theindex}

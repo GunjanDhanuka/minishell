@@ -1,0 +1,444 @@
+PWD /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.tex
+OUTPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.log
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array-2016-10-06.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/doxygen.sty
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/doxygen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/longtable_doxygen.sty
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/longtable_doxygen.sty
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/tabu_doxygen.sty
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/tabu_doxygen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hanging/hanging.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hanging/hanging.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+OUTPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.idx
+INPUT /usr/share/texlive/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoc/etoc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoc/etoc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.aux
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.aux
+OUTPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.aux
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.out
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.out
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.out
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.out
+OUTPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.out
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.out
+OUTPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.out
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.toc
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/wasy/wasy7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/wasy/wasy5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+OUTPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/wasy/wasy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8tn.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8tn.tfm
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/files.tex
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/files.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvb8tn.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8rn.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvb8tn.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8rn.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp.tex
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp__incl.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp__incl.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp__incl.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8c.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8c.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8tn.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrro8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/wasy/wasy8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/wasy/wasy6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvb8tn.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8rn.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8c.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrro8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrro8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr8c.vf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a21cf30ac6ad0db98d77d018d91ee7b11_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a21cf30ac6ad0db98d77d018d91ee7b11_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a21cf30ac6ad0db98d77d018d91ee7b11_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2af84ce312236aa574579149490208ab_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2af84ce312236aa574579149490208ab_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2af84ce312236aa574579149490208ab_icgraph.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a9ba7160033643930ae009566f7249495_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a9ba7160033643930ae009566f7249495_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a9ba7160033643930ae009566f7249495_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a9ba7160033643930ae009566f7249495_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a9ba7160033643930ae009566f7249495_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a9ba7160033643930ae009566f7249495_icgraph.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_aa86434ac88f6a72c4110e4403752eb12_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_aa86434ac88f6a72c4110e4403752eb12_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_aa86434ac88f6a72c4110e4403752eb12_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad17b10fabec1bedf283c269ceabb87bd_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad17b10fabec1bedf283c269ceabb87bd_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad17b10fabec1bedf283c269ceabb87bd_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad17b10fabec1bedf283c269ceabb87bd_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad17b10fabec1bedf283c269ceabb87bd_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad17b10fabec1bedf283c269ceabb87bd_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a58d5983c637527f4dad27d76f531bd6b_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a58d5983c637527f4dad27d76f531bd6b_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a58d5983c637527f4dad27d76f531bd6b_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad6cfb065ec428179025d0cbac791a370_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad6cfb065ec428179025d0cbac791a370_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad6cfb065ec428179025d0cbac791a370_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a5a9d153d1318a61a9ddbba47ad801cd0_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a5a9d153d1318a61a9ddbba47ad801cd0_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a5a9d153d1318a61a9ddbba47ad801cd0_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a5a9d153d1318a61a9ddbba47ad801cd0_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a5a9d153d1318a61a9ddbba47ad801cd0_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a5a9d153d1318a61a9ddbba47ad801cd0_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a0dc69b609ceb0367bcdaaf61e29fbe08_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a0dc69b609ceb0367bcdaaf61e29fbe08_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a0dc69b609ceb0367bcdaaf61e29fbe08_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_add5fed411e73f35ab95d8dbef4d07880_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_add5fed411e73f35ab95d8dbef4d07880_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_add5fed411e73f35ab95d8dbef4d07880_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a77099b28c8e46f7ee9f33d6cee71cef6_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a77099b28c8e46f7ee9f33d6cee71cef6_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a77099b28c8e46f7ee9f33d6cee71cef6_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a7803fa729c2484e9027ed0bcbe4a8c66_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a7803fa729c2484e9027ed0bcbe4a8c66_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a7803fa729c2484e9027ed0bcbe4a8c66_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a7803fa729c2484e9027ed0bcbe4a8c66_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a7803fa729c2484e9027ed0bcbe4a8c66_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a7803fa729c2484e9027ed0bcbe4a8c66_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a635ae33b0fb8acc10fa4db894209906c_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a635ae33b0fb8acc10fa4db894209906c_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a635ae33b0fb8acc10fa4db894209906c_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_afd58ec2659ca46688e8c259c072d21fa_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_afd58ec2659ca46688e8c259c072d21fa_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_afd58ec2659ca46688e8c259c072d21fa_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ab09c91ef14a9d7bf2234f439ba497113_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ab09c91ef14a9d7bf2234f439ba497113_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ab09c91ef14a9d7bf2234f439ba497113_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a88d1ea5d5790bf3008c60e05b62db2df_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a88d1ea5d5790bf3008c60e05b62db2df_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a88d1ea5d5790bf3008c60e05b62db2df_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_afe97c20771986f2e318707e346b14275_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_afe97c20771986f2e318707e346b14275_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_afe97c20771986f2e318707e346b14275_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a8c7825a3050fd73926b1432ef22985b2_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a8c7825a3050fd73926b1432ef22985b2_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a8c7825a3050fd73926b1432ef22985b2_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad14610637787484523b22cb4cb223686_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad14610637787484523b22cb4cb223686_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_ad14610637787484523b22cb4cb223686_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2a903eb658aaa1b369e36b194c80076f_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2a903eb658aaa1b369e36b194c80076f_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2a903eb658aaa1b369e36b194c80076f_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2a903eb658aaa1b369e36b194c80076f_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2a903eb658aaa1b369e36b194c80076f_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2a903eb658aaa1b369e36b194c80076f_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a64a010a178f7546ec12b04c30f719edd_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a64a010a178f7546ec12b04c30f719edd_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a64a010a178f7546ec12b04c30f719edd_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a64a010a178f7546ec12b04c30f719edd_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a64a010a178f7546ec12b04c30f719edd_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a64a010a178f7546ec12b04c30f719edd_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a35f8bb7315bb150a2c31e1da7d1230bb_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a35f8bb7315bb150a2c31e1da7d1230bb_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a35f8bb7315bb150a2c31e1da7d1230bb_cgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a35f8bb7315bb150a2c31e1da7d1230bb_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a35f8bb7315bb150a2c31e1da7d1230bb_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a35f8bb7315bb150a2c31e1da7d1230bb_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a1c0b076dbc292eb4fdfc5bf861fcbd69_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a1c0b076dbc292eb4fdfc5bf861fcbd69_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a1c0b076dbc292eb4fdfc5bf861fcbd69_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a028f03d42dcc6a8b5fb3a9cbbe66c114_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a028f03d42dcc6a8b5fb3a9cbbe66c114_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a028f03d42dcc6a8b5fb3a9cbbe66c114_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a4f1803b4d6f96066caec369c772fcdf3_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a4f1803b4d6f96066caec369c772fcdf3_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a4f1803b4d6f96066caec369c772fcdf3_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2ccae85fb50e2a0d35487378e35463cd_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2ccae85fb50e2a0d35487378e35463cd_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a2ccae85fb50e2a0d35487378e35463cd_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a8d83db0bd1fa811e13d455a3dd56689e_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a8d83db0bd1fa811e13d455a3dd56689e_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a8d83db0bd1fa811e13d455a3dd56689e_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a262ec0428de2bdb24035da13f099fe12_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a262ec0428de2bdb24035da13f099fe12_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_a262ec0428de2bdb24035da13f099fe12_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_abb8389389c7a43af943ef250ff82c60b_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_abb8389389c7a43af943ef250ff82c60b_icgraph.pdf
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/shell_8cpp_abb8389389c7a43af943ef250ff82c60b_icgraph.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.ind
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.ind
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.aux
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.out
+INPUT /home/gunjan/Desktop/Semester 3/CS242 SSL/Assignment 2/docs/latex/refman.out
+INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb

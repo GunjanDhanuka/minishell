@@ -1,0 +1,1000 @@
+\hypertarget{shell_8cpp}{}\doxysection{src/shell.cpp File Reference}
+\label{shell_8cpp}\index{src/shell.cpp@{src/shell.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$sys/wait.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+Include dependency graph for shell.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{shell_8cpp_ad59ea32096dfdff1455c4fb11dfcb640}{T\+O\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}~64
+\item 
+\#define \mbox{\hyperlink{shell_8cpp_a6118b3bfeda377a9e86e3cfba39b32b8}{R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}~1024
+\item 
+\#define \mbox{\hyperlink{shell_8cpp_a7d9b3a6fc9389f69acac012e3873f11e}{T\+O\+K\+\_\+\+D\+E\+L\+IM}}~\char`\"{} =\textbackslash{}t\textbackslash{}r\textbackslash{}n\textbackslash{}a\char`\"{}
+\item 
+\#define \mbox{\hyperlink{shell_8cpp_ac328e551bde3d39b6d7b8cc9e048d941}{Z\+E\+RO}}~0
+\item 
+\#define \mbox{\hyperlink{shell_8cpp_a206b6f5362e56b51ca957635350b70b6}{O\+NE}}~1
+\item 
+\#define \mbox{\hyperlink{shell_8cpp_a806511f4930171733227c99101dc0606}{N\+E\+W\+L\+I\+NE}}~\textquotesingle{}\textbackslash{}n\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{shell_8cpp_aabb3b9f6622bb12d8d96c5e9aa8ea25f}{M\+A\+X\+C\+O\+MS}}~100
+\item 
+\#define \mbox{\hyperlink{shell_8cpp_a8ce29b39ab15907be0a8488e481a017f}{err}}(x)~cerr $<$$<$ \mbox{\hyperlink{shell_8cpp_a028f03d42dcc6a8b5fb3a9cbbe66c114}{red}} $<$$<$ x $<$$<$ \mbox{\hyperlink{shell_8cpp_a2ccae85fb50e2a0d35487378e35463cd}{reset}} $<$$<$ endl;
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{shell_8cpp_a028f03d42dcc6a8b5fb3a9cbbe66c114}{red}} (\char`\"{}\textbackslash{}033\mbox{[}0;31m\char`\"{})
+\item 
+const std\+::string \mbox{\hyperlink{shell_8cpp_aa86434ac88f6a72c4110e4403752eb12}{green}} (\char`\"{}\textbackslash{}033\mbox{[}0;32m\char`\"{})
+\item 
+const std\+::string \mbox{\hyperlink{shell_8cpp_a21cf30ac6ad0db98d77d018d91ee7b11}{blue}} (\char`\"{}\textbackslash{}033\mbox{[}0;34m\char`\"{})
+\item 
+const std\+::string \mbox{\hyperlink{shell_8cpp_abb8389389c7a43af943ef250ff82c60b}{yellow}} (\char`\"{}\textbackslash{}033\mbox{[}0;33m\char`\"{})
+\item 
+const std\+::string \mbox{\hyperlink{shell_8cpp_a2af84ce312236aa574579149490208ab}{cyan}} (\char`\"{}\textbackslash{}033\mbox{[}0;36m\char`\"{})
+\item 
+const std\+::string \mbox{\hyperlink{shell_8cpp_a2ccae85fb50e2a0d35487378e35463cd}{reset}} (\char`\"{}\textbackslash{}033\mbox{[}0m\char`\"{})
+\item 
+int \mbox{\hyperlink{shell_8cpp_afe97c20771986f2e318707e346b14275}{number\+\_\+of\+\_\+builtins}} ()
+\item 
+int \mbox{\hyperlink{shell_8cpp_a0dc69b609ceb0367bcdaaf61e29fbe08}{my\+\_\+cd}} (char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_a7803fa729c2484e9027ed0bcbe4a8c66}{my\+\_\+help}} (char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_a77099b28c8e46f7ee9f33d6cee71cef6}{my\+\_\+exit}} (char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_afd58ec2659ca46688e8c259c072d21fa}{my\+\_\+printenv}} (char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_ab09c91ef14a9d7bf2234f439ba497113}{my\+\_\+setenv}} (char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_a88d1ea5d5790bf3008c60e05b62db2df}{my\+\_\+unsetenv}} (char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_a635ae33b0fb8acc10fa4db894209906c}{my\+\_\+history}} (char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_add5fed411e73f35ab95d8dbef4d07880}{my\+\_\+echo}} (char $\ast$$\ast$args)
+\item 
+void \mbox{\hyperlink{shell_8cpp_a64a010a178f7546ec12b04c30f719edd}{print\+Current\+Dir}} ()
+\item 
+int \mbox{\hyperlink{shell_8cpp_a1c0b076dbc292eb4fdfc5bf861fcbd69}{read\+\_\+input}} (char $\ast$s)
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{shell_8cpp_a0745e1e24fce118916f4e12fa247566f}{split\+\_\+input}} (char $\ast$s)
+\item 
+void \mbox{\hyperlink{shell_8cpp_a8c7825a3050fd73926b1432ef22985b2}{parser}} (char $\ast$s, char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_ad6cfb065ec428179025d0cbac791a370}{launcher}} (char $\ast$$\ast$args)
+\item 
+void \mbox{\hyperlink{shell_8cpp_a262ec0428de2bdb24035da13f099fe12}{runsource}} (int pfd\mbox{[}$\,$\mbox{]}, char $\ast$$\ast$args)
+\item 
+void \mbox{\hyperlink{shell_8cpp_a8d83db0bd1fa811e13d455a3dd56689e}{rundest}} (int pfd\mbox{[}$\,$\mbox{]}, char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_a2a903eb658aaa1b369e36b194c80076f}{pipe\+Launcher}} (char $\ast$$\ast$parsed, char $\ast$$\ast$piped)
+\item 
+int \mbox{\hyperlink{shell_8cpp_a9ba7160033643930ae009566f7249495}{execute}} (char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_ad17b10fabec1bedf283c269ceabb87bd}{inbuilt\+Handler}} (char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_ad14610637787484523b22cb4cb223686}{parser\+Pipe}} (char $\ast$str, char $\ast$$\ast$pipedarr)
+\item 
+int \mbox{\hyperlink{shell_8cpp_a4f1803b4d6f96066caec369c772fcdf3}{redirection}} (char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_a58d5983c637527f4dad27d76f531bd6b}{is\+Redirection}} (char $\ast$$\ast$args)
+\item 
+int \mbox{\hyperlink{shell_8cpp_a35f8bb7315bb150a2c31e1da7d1230bb}{process\+Input}} (char $\ast$str, char $\ast$$\ast$parsed, char $\ast$$\ast$piped)
+\item 
+void \mbox{\hyperlink{shell_8cpp_a5a9d153d1318a61a9ddbba47ad801cd0}{main\+\_\+process}} ()
+\item 
+int \mbox{\hyperlink{shell_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{shell_8cpp_aff84c9cc3da87aa6fa07aa4876bdb49c}{builtin\+\_\+str}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+C\+S224 Assignment 2\+: Implementing a mini-\/shell using C/\+C++
+
+\begin{DoxyAuthor}{Author}
+Gunjan Dhanuka 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 09/2021 
+\end{DoxyVersion}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{shell_8cpp_a8ce29b39ab15907be0a8488e481a017f}\label{shell_8cpp_a8ce29b39ab15907be0a8488e481a017f}} 
+\index{shell.cpp@{shell.cpp}!err@{err}}
+\index{err@{err}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{err}{err}}
+{\footnotesize\ttfamily \#define err(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~cerr $<$$<$ \mbox{\hyperlink{shell_8cpp_a028f03d42dcc6a8b5fb3a9cbbe66c114}{red}} $<$$<$ x $<$$<$ \mbox{\hyperlink{shell_8cpp_a2ccae85fb50e2a0d35487378e35463cd}{reset}} $<$$<$ endl;}
+
+
+
+Definition at line 25 of file shell.\+cpp.
+
+\mbox{\Hypertarget{shell_8cpp_aabb3b9f6622bb12d8d96c5e9aa8ea25f}\label{shell_8cpp_aabb3b9f6622bb12d8d96c5e9aa8ea25f}} 
+\index{shell.cpp@{shell.cpp}!MAXCOMS@{MAXCOMS}}
+\index{MAXCOMS@{MAXCOMS}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{MAXCOMS}{MAXCOMS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+C\+O\+MS~100}
+
+
+
+Definition at line 24 of file shell.\+cpp.
+
+\mbox{\Hypertarget{shell_8cpp_a806511f4930171733227c99101dc0606}\label{shell_8cpp_a806511f4930171733227c99101dc0606}} 
+\index{shell.cpp@{shell.cpp}!NEWLINE@{NEWLINE}}
+\index{NEWLINE@{NEWLINE}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{NEWLINE}{NEWLINE}}
+{\footnotesize\ttfamily \#define N\+E\+W\+L\+I\+NE~\textquotesingle{}\textbackslash{}n\textquotesingle{}}
+
+
+
+Definition at line 23 of file shell.\+cpp.
+
+\mbox{\Hypertarget{shell_8cpp_a206b6f5362e56b51ca957635350b70b6}\label{shell_8cpp_a206b6f5362e56b51ca957635350b70b6}} 
+\index{shell.cpp@{shell.cpp}!ONE@{ONE}}
+\index{ONE@{ONE}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{ONE}{ONE}}
+{\footnotesize\ttfamily \#define O\+NE~1}
+
+
+
+Definition at line 22 of file shell.\+cpp.
+
+\mbox{\Hypertarget{shell_8cpp_a6118b3bfeda377a9e86e3cfba39b32b8}\label{shell_8cpp_a6118b3bfeda377a9e86e3cfba39b32b8}} 
+\index{shell.cpp@{shell.cpp}!READ\_LINE\_BUFFER\_SIZE@{READ\_LINE\_BUFFER\_SIZE}}
+\index{READ\_LINE\_BUFFER\_SIZE@{READ\_LINE\_BUFFER\_SIZE}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{READ\_LINE\_BUFFER\_SIZE}{READ\_LINE\_BUFFER\_SIZE}}
+{\footnotesize\ttfamily \#define R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE~1024}
+
+
+
+Definition at line 19 of file shell.\+cpp.
+
+\mbox{\Hypertarget{shell_8cpp_ad59ea32096dfdff1455c4fb11dfcb640}\label{shell_8cpp_ad59ea32096dfdff1455c4fb11dfcb640}} 
+\index{shell.cpp@{shell.cpp}!TOK\_BUFFER\_SIZE@{TOK\_BUFFER\_SIZE}}
+\index{TOK\_BUFFER\_SIZE@{TOK\_BUFFER\_SIZE}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{TOK\_BUFFER\_SIZE}{TOK\_BUFFER\_SIZE}}
+{\footnotesize\ttfamily \#define T\+O\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE~64}
+
+
+
+Definition at line 18 of file shell.\+cpp.
+
+\mbox{\Hypertarget{shell_8cpp_a7d9b3a6fc9389f69acac012e3873f11e}\label{shell_8cpp_a7d9b3a6fc9389f69acac012e3873f11e}} 
+\index{shell.cpp@{shell.cpp}!TOK\_DELIM@{TOK\_DELIM}}
+\index{TOK\_DELIM@{TOK\_DELIM}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{TOK\_DELIM}{TOK\_DELIM}}
+{\footnotesize\ttfamily \#define T\+O\+K\+\_\+\+D\+E\+L\+IM~\char`\"{} =\textbackslash{}t\textbackslash{}r\textbackslash{}n\textbackslash{}a\char`\"{}}
+
+
+
+Definition at line 20 of file shell.\+cpp.
+
+\mbox{\Hypertarget{shell_8cpp_ac328e551bde3d39b6d7b8cc9e048d941}\label{shell_8cpp_ac328e551bde3d39b6d7b8cc9e048d941}} 
+\index{shell.cpp@{shell.cpp}!ZERO@{ZERO}}
+\index{ZERO@{ZERO}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{ZERO}{ZERO}}
+{\footnotesize\ttfamily \#define Z\+E\+RO~0}
+
+
+
+Definition at line 21 of file shell.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{shell_8cpp_a21cf30ac6ad0db98d77d018d91ee7b11}\label{shell_8cpp_a21cf30ac6ad0db98d77d018d91ee7b11}} 
+\index{shell.cpp@{shell.cpp}!blue@{blue}}
+\index{blue@{blue}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{blue()}{blue()}}
+{\footnotesize\ttfamily const std\+::string blue (\begin{DoxyParamCaption}\item[{\char`\"{}\textbackslash{}033\mbox{[}0;34m\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a21cf30ac6ad0db98d77d018d91ee7b11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a2af84ce312236aa574579149490208ab}\label{shell_8cpp_a2af84ce312236aa574579149490208ab}} 
+\index{shell.cpp@{shell.cpp}!cyan@{cyan}}
+\index{cyan@{cyan}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{cyan()}{cyan()}}
+{\footnotesize\ttfamily const std\+::string cyan (\begin{DoxyParamCaption}\item[{\char`\"{}\textbackslash{}033\mbox{[}0;36m\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{shell_8cpp_a2af84ce312236aa574579149490208ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a9ba7160033643930ae009566f7249495}\label{shell_8cpp_a9ba7160033643930ae009566f7249495}} 
+\index{shell.cpp@{shell.cpp}!execute@{execute}}
+\index{execute@{execute}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily int execute (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Executes a shell-\/command which is not an inbuilt/piped command. 
+\begin{DoxyParams}{Parameters}
+{\em args} & the array containing the command and its args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if the command is empty; else the output of launcher function 
+\end{DoxyReturn}
+
+
+Definition at line 498 of file shell.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{shell_8cpp_a9ba7160033643930ae009566f7249495_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{shell_8cpp_a9ba7160033643930ae009566f7249495_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_aa86434ac88f6a72c4110e4403752eb12}\label{shell_8cpp_aa86434ac88f6a72c4110e4403752eb12}} 
+\index{shell.cpp@{shell.cpp}!green@{green}}
+\index{green@{green}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{green()}{green()}}
+{\footnotesize\ttfamily const std\+::string green (\begin{DoxyParamCaption}\item[{\char`\"{}\textbackslash{}033\mbox{[}0;32m\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_aa86434ac88f6a72c4110e4403752eb12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_ad17b10fabec1bedf283c269ceabb87bd}\label{shell_8cpp_ad17b10fabec1bedf283c269ceabb87bd}} 
+\index{shell.cpp@{shell.cpp}!inbuiltHandler@{inbuiltHandler}}
+\index{inbuiltHandler@{inbuiltHandler}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{inbuiltHandler()}{inbuiltHandler()}}
+{\footnotesize\ttfamily int inbuilt\+Handler (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Handles the inbuilt commands of the minishell. If the command is present, it is executed. 
+\begin{DoxyParams}{Parameters}
+{\em args} & the array containing the command and its args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if the command is present and successfully executed, zero if command not present 
+\end{DoxyReturn}
+
+
+Definition at line 515 of file shell.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_ad17b10fabec1bedf283c269ceabb87bd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_ad17b10fabec1bedf283c269ceabb87bd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a58d5983c637527f4dad27d76f531bd6b}\label{shell_8cpp_a58d5983c637527f4dad27d76f531bd6b}} 
+\index{shell.cpp@{shell.cpp}!isRedirection@{isRedirection}}
+\index{isRedirection@{isRedirection}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{isRedirection()}{isRedirection()}}
+{\footnotesize\ttfamily int is\+Redirection (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Checks if the user input args contain a redirection operator. 
+\begin{DoxyParams}{Parameters}
+{\em args} & the array containing the command and its args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if any of the redirection operators are present, zero otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 689 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a58d5983c637527f4dad27d76f531bd6b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_ad6cfb065ec428179025d0cbac791a370}\label{shell_8cpp_ad6cfb065ec428179025d0cbac791a370}} 
+\index{shell.cpp@{shell.cpp}!launcher@{launcher}}
+\index{launcher@{launcher}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{launcher()}{launcher()}}
+{\footnotesize\ttfamily int launcher (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Launches the process using the args supplied. Executes the parent and then waits for the child to finish. 
+\begin{DoxyParams}{Parameters}
+{\em args} & the string array containing the parsed tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if the process completed successfully 
+\end{DoxyReturn}
+
+
+Definition at line 381 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_ad6cfb065ec428179025d0cbac791a370_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{shell_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{shell.cpp@{shell.cpp}!main@{main}}
+\index{main@{main}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The main function of a C++ program. \begin{DoxyReturn}{Returns}
+zero if exits normally 
+\end{DoxyReturn}
+
+
+Definition at line 809 of file shell.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a5a9d153d1318a61a9ddbba47ad801cd0}\label{shell_8cpp_a5a9d153d1318a61a9ddbba47ad801cd0}} 
+\index{shell.cpp@{shell.cpp}!main\_process@{main\_process}}
+\index{main\_process@{main\_process}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{main\_process()}{main\_process()}}
+{\footnotesize\ttfamily void main\+\_\+process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Driver function, contains the main infinite loop of the terminal and handles the execution of different functions from reading input to running commands. 
+
+Definition at line 762 of file shell.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a5a9d153d1318a61a9ddbba47ad801cd0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{shell_8cpp_a5a9d153d1318a61a9ddbba47ad801cd0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a0dc69b609ceb0367bcdaaf61e29fbe08}\label{shell_8cpp_a0dc69b609ceb0367bcdaaf61e29fbe08}} 
+\index{shell.cpp@{shell.cpp}!my\_cd@{my\_cd}}
+\index{my\_cd@{my\_cd}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{my\_cd()}{my\_cd()}}
+{\footnotesize\ttfamily int my\+\_\+cd (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Changes the directory using chdir 
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if executed correctly, zero if some error encountered! 
+\end{DoxyReturn}
+
+
+Definition at line 62 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a0dc69b609ceb0367bcdaaf61e29fbe08_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_add5fed411e73f35ab95d8dbef4d07880}\label{shell_8cpp_add5fed411e73f35ab95d8dbef4d07880}} 
+\index{shell.cpp@{shell.cpp}!my\_echo@{my\_echo}}
+\index{my\_echo@{my\_echo}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{my\_echo()}{my\_echo()}}
+{\footnotesize\ttfamily int my\+\_\+echo (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+A re-\/implementation of the \textquotesingle{}echo\textquotesingle{} command of U\+N\+IX terminal. 
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if executed correctly, zero if some error encountered! 
+\end{DoxyReturn}
+
+
+Definition at line 199 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_add5fed411e73f35ab95d8dbef4d07880_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a77099b28c8e46f7ee9f33d6cee71cef6}\label{shell_8cpp_a77099b28c8e46f7ee9f33d6cee71cef6}} 
+\index{shell.cpp@{shell.cpp}!my\_exit@{my\_exit}}
+\index{my\_exit@{my\_exit}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{my\_exit()}{my\_exit()}}
+{\footnotesize\ttfamily int my\+\_\+exit (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Exits from the shell 
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zero for exit 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a77099b28c8e46f7ee9f33d6cee71cef6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a7803fa729c2484e9027ed0bcbe4a8c66}\label{shell_8cpp_a7803fa729c2484e9027ed0bcbe4a8c66}} 
+\index{shell.cpp@{shell.cpp}!my\_help@{my\_help}}
+\index{my\_help@{my\_help}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{my\_help()}{my\_help()}}
+{\footnotesize\ttfamily int my\+\_\+help (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Prints info about the shell and its functionalities 
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if executed correctly, zero if some error encountered! 
+\end{DoxyReturn}
+
+
+Definition at line 86 of file shell.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{shell_8cpp_a7803fa729c2484e9027ed0bcbe4a8c66_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a7803fa729c2484e9027ed0bcbe4a8c66_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a635ae33b0fb8acc10fa4db894209906c}\label{shell_8cpp_a635ae33b0fb8acc10fa4db894209906c}} 
+\index{shell.cpp@{shell.cpp}!my\_history@{my\_history}}
+\index{my\_history@{my\_history}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{my\_history()}{my\_history()}}
+{\footnotesize\ttfamily int my\+\_\+history (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Prints the history of the shell so far since the first execution. 
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if executed correctly, zero if some error encountered! 
+\end{DoxyReturn}
+
+
+Definition at line 183 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a635ae33b0fb8acc10fa4db894209906c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_afd58ec2659ca46688e8c259c072d21fa}\label{shell_8cpp_afd58ec2659ca46688e8c259c072d21fa}} 
+\index{shell.cpp@{shell.cpp}!my\_printenv@{my\_printenv}}
+\index{my\_printenv@{my\_printenv}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{my\_printenv()}{my\_printenv()}}
+{\footnotesize\ttfamily int my\+\_\+printenv (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Prints the environment variable asked for by the {\ttfamily args}; if no argument is passed, then it prints the five common env varibles! 
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if executed correctly, zero if some error encountered! 
+\end{DoxyReturn}
+
+
+Definition at line 119 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_afd58ec2659ca46688e8c259c072d21fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_ab09c91ef14a9d7bf2234f439ba497113}\label{shell_8cpp_ab09c91ef14a9d7bf2234f439ba497113}} 
+\index{shell.cpp@{shell.cpp}!my\_setenv@{my\_setenv}}
+\index{my\_setenv@{my\_setenv}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{my\_setenv()}{my\_setenv()}}
+{\footnotesize\ttfamily int my\+\_\+setenv (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Changes the value of preexisting env variable or creates a new one. 
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if executed correctly, zero if some error encountered! 
+\end{DoxyReturn}
+
+
+Definition at line 148 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_ab09c91ef14a9d7bf2234f439ba497113_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a88d1ea5d5790bf3008c60e05b62db2df}\label{shell_8cpp_a88d1ea5d5790bf3008c60e05b62db2df}} 
+\index{shell.cpp@{shell.cpp}!my\_unsetenv@{my\_unsetenv}}
+\index{my\_unsetenv@{my\_unsetenv}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{my\_unsetenv()}{my\_unsetenv()}}
+{\footnotesize\ttfamily int my\+\_\+unsetenv (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Removes the value of the environment varible 
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if executed correctly, zero if some error encountered! 
+\end{DoxyReturn}
+
+
+Definition at line 165 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a88d1ea5d5790bf3008c60e05b62db2df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_afe97c20771986f2e318707e346b14275}\label{shell_8cpp_afe97c20771986f2e318707e346b14275}} 
+\index{shell.cpp@{shell.cpp}!number\_of\_builtins@{number\_of\_builtins}}
+\index{number\_of\_builtins@{number\_of\_builtins}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{number\_of\_builtins()}{number\_of\_builtins()}}
+{\footnotesize\ttfamily int number\+\_\+of\+\_\+builtins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Tells the number of built-\/in functions of the shell \begin{DoxyReturn}{Returns}
+number of built-\/in functions 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_afe97c20771986f2e318707e346b14275_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a8c7825a3050fd73926b1432ef22985b2}\label{shell_8cpp_a8c7825a3050fd73926b1432ef22985b2}} 
+\index{shell.cpp@{shell.cpp}!parser@{parser}}
+\index{parser@{parser}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{parser()}{parser()}}
+{\footnotesize\ttfamily void parser (\begin{DoxyParamCaption}\item[{char $\ast$}]{s,  }\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Changes the directory using chdir 
+\begin{DoxyParams}{Parameters}
+{\em s} & the string to be parsed \\
+\hline
+{\em args} & the string array to store the parsed tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 356 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a8c7825a3050fd73926b1432ef22985b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_ad14610637787484523b22cb4cb223686}\label{shell_8cpp_ad14610637787484523b22cb4cb223686}} 
+\index{shell.cpp@{shell.cpp}!parserPipe@{parserPipe}}
+\index{parserPipe@{parserPipe}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{parserPipe()}{parserPipe()}}
+{\footnotesize\ttfamily int parser\+Pipe (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{char $\ast$$\ast$}]{pipedarr }\end{DoxyParamCaption})}
+
+Parses the user input that contains a pipe symbol. Separates into pre-\/pipe and post-\/pipe args. 
+\begin{DoxyParams}{Parameters}
+{\em str} & the string input by the user \\
+\hline
+{\em pipedarr} & the array which will store the args before and after pipe separately. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if pipe is present and zero if no piping present. 
+\end{DoxyReturn}
+
+
+Definition at line 582 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_ad14610637787484523b22cb4cb223686_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a2a903eb658aaa1b369e36b194c80076f}\label{shell_8cpp_a2a903eb658aaa1b369e36b194c80076f}} 
+\index{shell.cpp@{shell.cpp}!pipeLauncher@{pipeLauncher}}
+\index{pipeLauncher@{pipeLauncher}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{pipeLauncher()}{pipeLauncher()}}
+{\footnotesize\ttfamily int pipe\+Launcher (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{parsed,  }\item[{char $\ast$$\ast$}]{piped }\end{DoxyParamCaption})}
+
+Starts the pipe and then calls the runsource and rundest in order to complete the piping process. 
+\begin{DoxyParams}{Parameters}
+{\em parsed} & the arguments before the pipe($\vert$) symbol \\
+\hline
+{\em piped} & the arguments after the pipe($\vert$) symbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if the process completed successfully 
+\end{DoxyReturn}
+
+
+Definition at line 473 of file shell.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{shell_8cpp_a2a903eb658aaa1b369e36b194c80076f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{shell_8cpp_a2a903eb658aaa1b369e36b194c80076f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a64a010a178f7546ec12b04c30f719edd}\label{shell_8cpp_a64a010a178f7546ec12b04c30f719edd}} 
+\index{shell.cpp@{shell.cpp}!printCurrentDir@{printCurrentDir}}
+\index{printCurrentDir@{printCurrentDir}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{printCurrentDir()}{printCurrentDir()}}
+{\footnotesize\ttfamily void print\+Current\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the current working directory ahead of the shell-\/prompt. 
+
+Definition at line 233 of file shell.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{shell_8cpp_a64a010a178f7546ec12b04c30f719edd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{shell_8cpp_a64a010a178f7546ec12b04c30f719edd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a35f8bb7315bb150a2c31e1da7d1230bb}\label{shell_8cpp_a35f8bb7315bb150a2c31e1da7d1230bb}} 
+\index{shell.cpp@{shell.cpp}!processInput@{processInput}}
+\index{processInput@{processInput}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{processInput()}{processInput()}}
+{\footnotesize\ttfamily int process\+Input (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{char $\ast$$\ast$}]{parsed,  }\item[{char $\ast$$\ast$}]{piped }\end{DoxyParamCaption})}
+
+Handles the inbuilt commands of the minishell. If the command is present, it is executed. 
+\begin{DoxyParams}{Parameters}
+{\em str} & containing the input given by the user \\
+\hline
+{\em parsed} & string array to store the commands and the args before pipe, if any. \\
+\hline
+{\em piped} & string array to store the commands and its args after the pipe, if any. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zero if the command is inbuilt, one if the command is usual shell command, two if the user seeks piping, and three if the user seeks redirection. 
+\end{DoxyReturn}
+
+
+Definition at line 722 of file shell.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a35f8bb7315bb150a2c31e1da7d1230bb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{shell_8cpp_a35f8bb7315bb150a2c31e1da7d1230bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a1c0b076dbc292eb4fdfc5bf861fcbd69}\label{shell_8cpp_a1c0b076dbc292eb4fdfc5bf861fcbd69}} 
+\index{shell.cpp@{shell.cpp}!read\_input@{read\_input}}
+\index{read\_input@{read\_input}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{read\_input()}{read\_input()}}
+{\footnotesize\ttfamily int read\+\_\+input (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+Reads the input from the shell given by the user using the old-\/school buffer mothod just for working closer to the terminal. 
+\begin{DoxyParams}{Parameters}
+{\em s} & the string containing user input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one if the input string was empty 
+\end{DoxyReturn}
+
+
+Definition at line 246 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{shell_8cpp_a1c0b076dbc292eb4fdfc5bf861fcbd69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a028f03d42dcc6a8b5fb3a9cbbe66c114}\label{shell_8cpp_a028f03d42dcc6a8b5fb3a9cbbe66c114}} 
+\index{shell.cpp@{shell.cpp}!red@{red}}
+\index{red@{red}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{red()}{red()}}
+{\footnotesize\ttfamily const std\+::string red (\begin{DoxyParamCaption}\item[{\char`\"{}\textbackslash{}033\mbox{[}0;31m\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a028f03d42dcc6a8b5fb3a9cbbe66c114_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a4f1803b4d6f96066caec369c772fcdf3}\label{shell_8cpp_a4f1803b4d6f96066caec369c772fcdf3}} 
+\index{shell.cpp@{shell.cpp}!redirection@{redirection}}
+\index{redirection@{redirection}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{redirection()}{redirection()}}
+{\footnotesize\ttfamily int redirection (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Performs redirection of one or multiple of three kinds ($<$, $>$, $>$$>$) using file descriptors that duplicate the input/output file to stdin/stdout. 
+\begin{DoxyParams}{Parameters}
+{\em args} & the array containing the command and its args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zero if executed successfully. 
+\end{DoxyReturn}
+
+
+Definition at line 606 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{shell_8cpp_a4f1803b4d6f96066caec369c772fcdf3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a2ccae85fb50e2a0d35487378e35463cd}\label{shell_8cpp_a2ccae85fb50e2a0d35487378e35463cd}} 
+\index{shell.cpp@{shell.cpp}!reset@{reset}}
+\index{reset@{reset}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily const std\+::string reset (\begin{DoxyParamCaption}\item[{\char`\"{}\textbackslash{}033\mbox{[}0m\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a2ccae85fb50e2a0d35487378e35463cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a8d83db0bd1fa811e13d455a3dd56689e}\label{shell_8cpp_a8d83db0bd1fa811e13d455a3dd56689e}} 
+\index{shell.cpp@{shell.cpp}!rundest@{rundest}}
+\index{rundest@{rundest}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{rundest()}{rundest()}}
+{\footnotesize\ttfamily void rundest (\begin{DoxyParamCaption}\item[{int}]{pfd\mbox{[}$\,$\mbox{]},  }\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Runs the second command in a piped statement. 
+\begin{DoxyParams}{Parameters}
+{\em pfd} & the array containing the file descriptors for read and write of the pipe \\
+\hline
+{\em args} & the string array containing the parsed tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 448 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a8d83db0bd1fa811e13d455a3dd56689e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a262ec0428de2bdb24035da13f099fe12}\label{shell_8cpp_a262ec0428de2bdb24035da13f099fe12}} 
+\index{shell.cpp@{shell.cpp}!runsource@{runsource}}
+\index{runsource@{runsource}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{runsource()}{runsource()}}
+{\footnotesize\ttfamily void runsource (\begin{DoxyParamCaption}\item[{int}]{pfd\mbox{[}$\,$\mbox{]},  }\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+Runs the first command in a piped statement. 
+\begin{DoxyParams}{Parameters}
+{\em pfd} & the array containing the file descriptors for read and write of the pipe \\
+\hline
+{\em args} & the string array containing the parsed tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 423 of file shell.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_a262ec0428de2bdb24035da13f099fe12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{shell_8cpp_a0745e1e24fce118916f4e12fa247566f}\label{shell_8cpp_a0745e1e24fce118916f4e12fa247566f}} 
+\index{shell.cpp@{shell.cpp}!split\_input@{split\_input}}
+\index{split\_input@{split\_input}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{split\_input()}{split\_input()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ split\+\_\+input (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+Splits the input into different tokens separated by pre-\/defined delimiters. 
+\begin{DoxyParams}{Parameters}
+{\em s} & the string containing user input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array of strings containing the tokens 
+\end{DoxyReturn}
+
+
+Definition at line 312 of file shell.\+cpp.
+
+\mbox{\Hypertarget{shell_8cpp_abb8389389c7a43af943ef250ff82c60b}\label{shell_8cpp_abb8389389c7a43af943ef250ff82c60b}} 
+\index{shell.cpp@{shell.cpp}!yellow@{yellow}}
+\index{yellow@{yellow}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{yellow()}{yellow()}}
+{\footnotesize\ttfamily const std\+::string yellow (\begin{DoxyParamCaption}\item[{\char`\"{}\textbackslash{}033\mbox{[}0;33m\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell_8cpp_abb8389389c7a43af943ef250ff82c60b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{shell_8cpp_aff84c9cc3da87aa6fa07aa4876bdb49c}\label{shell_8cpp_aff84c9cc3da87aa6fa07aa4876bdb49c}} 
+\index{shell.cpp@{shell.cpp}!builtin\_str@{builtin\_str}}
+\index{builtin\_str@{builtin\_str}!shell.cpp@{shell.cpp}}
+\doxysubsubsection{\texorpdfstring{builtin\_str}{builtin\_str}}
+{\footnotesize\ttfamily const char$\ast$ builtin\+\_\+str\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \textcolor{stringliteral}{"cd"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"help"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"exit"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"printenv"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"setenv"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"unsetenv"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"history"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"echo"}\}}
+
+\end{DoxyCode}
+
+
+Definition at line 36 of file shell.\+cpp.
+
