@@ -1,29 +1,21 @@
-*************************************************************************************
-**************************CS 242 ASSIGNMENT 2****************************************
-*************************************************************************************
-
-Prepared by:
-Name: GUNJAN DHANUKA
-
-Roll Number: 200101038
+# Minishell (built using C++)
 
 Programming Language Used: C++
 
 Operating Systems Used: LINUX (Ubuntu 20.10)
 
 Steps to run the code:
+```
 	1. Open the Linux Terminal and navigate to the project folder.
-	
-	Else if you wish to compile the source code again:
 	2. $ g++ main.cpp
 	3. $ ./a.out
-
+```
 This will bring the minishell in the terminal. 
 Type 'help' and press Enter to see the list of inbuilt commands.
 
 
-PROBLEM STATEMENT: 
-    The mini shell is designed to simulate the bash shell of UNIX kernel. In the simulation try to include as many functionalities as possible of thebash 		shell. The simulation should not only work well for LINUX external commands, but also include as many internal commands as possible. 
+## PROBLEM STATEMENT: 
+    The mini shell is designed to simulate the bash shell of UNIX kernel. In the simulation try to include as many functionalities as possible of the bash shell. The simulation should not only work well for LINUX external commands, but also include as many internal commands as possible. 
     
     Approach to be taken and elaboration:
     The basic program structure is shown below.
@@ -34,10 +26,9 @@ PROBLEM STATEMENT:
 	d. To ensure additional functionalities that are not executed by execv( ) such as environment variables, cd(all	variations), history and exit commands.
 
 
-*******TO VIEW THE DETAILED EXPLANATION OF THE CODE AND THE FUNCTION CALL GRAPHS, REFER TO Manual.pdf FILE IN THE PROJECT. IT CONTAINS VERY DETAILED 			EXPLANATION OF EACH AND EVERY FUNCTION USE AND ITS PARAMETERS AND RETURN TYPES (Created using Doxygen).*********
+> TO VIEW THE DETAILED EXPLANATION OF THE CODE AND THE FUNCTION CALL GRAPHS, REFER TO Manual.pdf FILE IN THE PROJECT. IT CONTAINS VERY DETAILED EXPLANATION OF EACH AND EVERY FUNCTION USE AND ITS PARAMETERS AND RETURN TYPES (Created using Doxygen).
 
-FEATURES OF THE MINISHELL:-
-
+## FEATURES OF THE MINISHELL:-
 	1. Supports commands like echo, cd which are not allowed in execvp().
 	2. Supports external commands like ls, cat, etc.
 	3. Has support for single-level piping (Eg: ls | wc).
@@ -47,8 +38,7 @@ FEATURES OF THE MINISHELL:-
 	7. Inbuilt commands like exit, help, printenv, setenv, cd, echo, unsetenv have been also implemented.
 	8. Colorful terminal with different colours for the pwd, prompt and errors!
 
-
-NOTE:
+### NOTE:
 	1. If the shell gets stuck at any point due to unforeseen reasons after executing a command, kindly press Enter key to get the prompt back.(I tried to 			trace the error but it doesn't happen every time even for a particular command). If this still doesn't work, press Ctrl+C to exit out of the 			program. 
 	
 	2. Make sure to not execute any potentially harmful commands using the shell, it is not a tool to play with and may cause permanent loss of data if 		used inappropriately.
